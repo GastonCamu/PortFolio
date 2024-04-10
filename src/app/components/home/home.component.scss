@@ -1,0 +1,92 @@
+div {
+    text-align: center;
+    h1 {
+
+    }
+    h2 {
+
+    }
+}
+div.descripcion {
+    padding: 6vw 0;
+    background-color: rgb(23, 23, 129);
+    p {
+        margin: auto;
+        width: 55%;
+        color: white;
+        font-size: 1.6vw;
+    }
+}
+h3 {
+    margin: 2vw 0 2vw 1.3vw;
+}
+@keyframes P-Animation {
+    0% {background-position: top;}
+    30% {background-position: bottom;}
+    100% {background-image: none; background-color: black; opacity: 1;}
+}
+@keyframes P-Animation-Text {
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+div.galeria-proyectos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a {
+        text-decoration: none;
+        div {
+            margin-bottom: 3vw;
+            width: 27vw;
+            height: 18vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                opacity: 0;
+                text-align: center;
+                width: 90%;
+                font-size: 1.5vw;
+                color: white;
+                font-weight: bolder;
+            }
+        }
+        div.P-Traveleate {
+            background-image: url(..//..//..//assets/img/P-Traveleate.jpeg);
+            
+        }
+        div.P-1Portfolio {
+            background-image: url(..//..//..//assets/img/P-1Portfolio.jpeg);
+        }
+        div.P-LandingPageAngular17 {
+            background-image: url(..//..//..//assets/img/P-LandingPageAngular17.jpeg);
+        }
+        div.P-ListaDeTareas {
+            background-image: url(..//..//..//assets/img/P-ListaDeTareas.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        div:hover {
+            animation-name: P-Animation;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+
+            p {
+                animation-name: P-Animation-Text;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
