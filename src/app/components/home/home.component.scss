@@ -67,6 +67,22 @@
         width: 0;
     }
 }
+@keyframes descripcion-A {
+    from {
+        height: 0vw;
+    }
+    to {
+        height: 22vw;
+    }
+}
+@keyframes descripcion-p-A {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 div.introduccion {
     text-align: center;
     h1 {
@@ -95,16 +111,20 @@ div.introduccion {
     }
 }
 div.descripcion {
-    padding: 6vw 0;
+    display: flex;
     margin: 2vw 0;
+    height: 0vw;
     background-color: rgb(85, 31, 156);
+    animation: descripcion-A 5s forwards 2s;
     p.descripcion-p {
-        width: 60%;
+        width: 70%;
         margin: auto;
         text-align: center;
         color: white;
         font-size: 1.6vw;
         font-weight: 500;
+        opacity: 0;
+        animation: descripcion-p-A 5s forwards 2s;
     }
 }
 h3 {
@@ -212,8 +232,12 @@ div.galeria-proyectos {
     }
 }
 div.tecnologias-aprendidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: rgb(85, 31, 156);
-    padding: 3vw 0;
+    margin-bottom: 10vw;
+    height: 40vw;
     h4 {
         text-align: center;
         font-size: 3vw;
@@ -241,13 +265,13 @@ div.tecnologias-aprendidas {
         }
         div.tecnologia-contenedor:hover {
             img {
-                transition: width 2s, height 2s;
-                width: 8vw;
-                height: 8vw;
+                transition: width 1500ms, height 1500ms;
+                width: 7vw;
+                height: 7vw;
             }
             p {
-                transition: font-size 2s;
-                font-size: 2vw;
+                transition: font-size 1500ms;
+                font-size: 1.8vw;
             }
         }
     }
