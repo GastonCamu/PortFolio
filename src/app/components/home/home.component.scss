@@ -59,23 +59,52 @@
         background-image: none; background-color: black;
     }
 }
-div {
+@keyframes escribirNombre {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+div.introduccion {
     text-align: center;
     h1 {
-
+        color: black;
     }
-    h2 {
-
+    div {
+        margin: auto;
+        display: table;
+        h2 {
+            font-family: monospace;
+            position: relative;
+            float: center;
+            color: black;
+            background-color: white;
+            font-size: 2.5vw;
+            font-weight: 1000;
+            span {
+                position:absolute;
+                right:0;
+                width:0;
+                background: white;
+                border-left: 3px solid rgb(85, 31, 156);
+                animation: escribirNombre 1900ms steps(12) infinite alternate;
+            }
+        }
     }
 }
 div.descripcion {
     padding: 6vw 0;
-    background-color: rgb(23, 23, 129);
-    p {
+    margin: 2vw 0;
+    background-color: rgb(85, 31, 156);
+    p.descripcion-p {
+        width: 60%;
         margin: auto;
-        width: 55%;
+        text-align: center;
         color: white;
         font-size: 1.6vw;
+        font-weight: 500;
     }
 }
 h3 {
@@ -182,6 +211,44 @@ div.galeria-proyectos {
         }
     }
 }
-div.tecnologias {
-    
+div.tecnologias-aprendidas {
+    background-color: rgb(85, 31, 156);
+    padding: 3vw 0;
+    h4 {
+        text-align: center;
+        font-size: 3vw;
+        color: white;
+    }
+    div.tecnologias {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 3vw 0;
+        div.tecnologia-contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                transition: width 2s, height 2s;
+                width: 5vw;
+                height: 5vw;
+            }
+            p {
+                text-align: center;
+                transition: font-size 2s;
+                font-weight: 1000;
+                font-size: 1.3vw;
+            }
+        }
+        div.tecnologia-contenedor:hover {
+            img {
+                transition: width 2s, height 2s;
+                width: 8vw;
+                height: 8vw;
+            }
+            p {
+                transition: font-size 2s;
+                font-size: 2vw;
+            }
+        }
+    }
 }
