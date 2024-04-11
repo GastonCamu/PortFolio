@@ -72,7 +72,7 @@
         height: 0vw;
     }
     to {
-        height: 22vw;
+        height: 20vw;
     }
 }
 @keyframes descripcion-p-A {
@@ -92,6 +92,7 @@ div.introduccion {
         margin: auto;
         display: table;
         h2 {
+            user-select: none;
             font-family: monospace;
             position: relative;
             float: center;
@@ -115,7 +116,7 @@ div.descripcion {
     margin: 2vw 0;
     height: 0vw;
     background-color: rgb(85, 31, 156);
-    animation: descripcion-A 5s forwards 2s;
+    animation: descripcion-A 5s forwards 1300ms;
     p.descripcion-p {
         width: 70%;
         margin: auto;
@@ -124,7 +125,7 @@ div.descripcion {
         font-size: 1.6vw;
         font-weight: 500;
         opacity: 0;
-        animation: descripcion-p-A 5s forwards 2s;
+        animation: descripcion-p-A 5s forwards 1300ms;
     }
 }
 h3 {
