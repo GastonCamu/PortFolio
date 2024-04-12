@@ -95,7 +95,7 @@
 }
 
 // Estilo mobile
-@media screen and (min-width: 992px) {
+@media all and (min-width: 992px) {
     // Estilo General
 div.introduccion {
     text-align: center;
@@ -292,7 +292,7 @@ div.tecnologias-aprendidas {
     }
 }
 }
-@media screen and (max-width: 991px){
+@media all and (max-width: 991px){
     div.introduccion {
         text-align: center;
         h1 {
