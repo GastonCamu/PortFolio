@@ -1,3 +1,5 @@
+// Animaciones
+
 @keyframes P-Animation {
     0% {background-position: top;}
     30% {background-position: bottom;}
@@ -75,6 +77,14 @@
         height: 20vw;
     }
 }
+@keyframes descripcion-A-M {
+    from {
+        height: 0vw;
+    }
+    to {
+        height: 38vw;
+    }
+}
 @keyframes descripcion-p-A {
     from {
         opacity: 0;
@@ -83,6 +93,9 @@
         opacity: 1;
     }
 }
+
+
+// Estilo General
 div.introduccion {
     text-align: center;
     h1 {
@@ -273,6 +286,187 @@ div.tecnologias-aprendidas {
             p {
                 transition: font-size 1500ms;
                 font-size: 1.8vw;
+            }
+        }
+    }
+}
+
+// Estilo mobile
+@media screen and (max-width: 991px){
+    div.introduccion {
+        text-align: center;
+        h1 {
+            color: black;
+            font-size: 6vw;
+        }
+        div {
+            margin: auto;
+            display: table;
+            h2 {
+                user-select: none;
+                font-family: monospace;
+                position: relative;
+                float: center;
+                color: black;
+                background-color: white;
+                font-size: 6vw;
+                font-weight: 1000;
+                span {
+                    position:absolute;
+                    right:0;
+                    width:0;
+                    background: white;
+                    border-left: 3px solid rgb(85, 31, 156);
+                    animation: escribirNombre 2500ms steps(12) infinite alternate;
+                }
+            }
+        }
+    }
+    div.descripcion {
+        display: flex;
+        margin: 2vw 0;
+        height: 0vw;
+        background-color: rgb(85, 31, 156);
+        animation: descripcion-A-M 2s forwards 1300ms;
+        p.descripcion-p {
+            width: 95%;
+            margin: auto;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+            font-size: 3.8vw;
+            opacity: 0;
+            animation: descripcion-p-A 4s forwards 1800ms;
+        }
+    }
+    h3 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    div.galeria-proyectos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        a {
+            text-decoration: none;
+            div {
+                margin-bottom: 20vw;
+                width: 90vw;
+                height: 70vw;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p {
+                    opacity: 0;
+                    text-align: center;
+                    width: 90%;
+                    font-size: 5vw;
+                    color: white;
+                    font-weight: bolder;
+                }
+            }
+            div.P-Traveleate {
+                background-image: url(..//..//..//assets/img/P-Traveleate.jpeg);
+                
+            }
+            div.P-1Portfolio {
+                background-image: url(..//..//..//assets/img/P-1Portfolio.jpeg);
+            }
+            div.P-LandingPageAngular17 {
+                background-image: url(..//..//..//assets/img/P-LandingPageAngular17.jpeg);
+            }
+            div.P-ListaDeTareas {
+                background-image: url(..//..//..//assets/img/P-ListaDeTareas.jpeg);
+                background-size: cover;
+                background-position: center;
+            }
+            div.P-DentCorp {
+                background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
+                background-size: cover;
+                background-position: center;
+                animation: P-DentCorp-A 15s forwards infinite 5s;
+                p {
+                    animation: P-Animation-Text 15s forwards infinite 5s;
+                }
+            }
+            div.P-SistemaProductos {
+                background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
+                background-size: cover;
+                background-position: center; 
+                animation: P-SistemaProductos-A 15s forwards infinite 5s; 
+
+                p {
+                    animation: P-Animation-Text 15s forwards infinite 5s;
+                }
+            }
+            div.P-SaltaVincula {
+                background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
+                background-size: contain;
+                background-position: center;
+                background-color: rgb(87, 87, 87);
+                animation: P-SaltaVincula-A 15s forwards infinite 5s;
+                p {
+                    animation: P-Animation-Text 15s forwards infinite 6s;
+                }
+            }
+            div.desktop {
+                animation: P-Animation 15s forwards infinite 5s;
+    
+                p {
+                    animation: P-Animation-Text 15s forwards infinite 5s;
+                }
+            }
+        }
+    }
+    div.tecnologias-aprendidas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(85, 31, 156);
+        margin-bottom: 10vw;
+        height: 140vw;
+        h4 {
+            text-align: center;
+            font-size: 7vw;
+            color: white;
+        }
+        div.tecnologias {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 3vw 0;
+            div.tecnologia-contenedor {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 30%;
+                img {
+                    transition: width 2s, height 2s;
+                    width: 9vw;
+                    height: 9vw;
+                }
+                p {
+                    text-align: center;
+                    transition: font-size 2s;
+                    font-weight: 1000;
+                    font-size: 4vw;
+                }
+            }
+            div.tecnologia-contenedor:hover {
+                img {
+                    transition: width 1500ms, height 1500ms;
+                    width: 7vw;
+                    height: 7vw;
+                }
+                p {
+                    transition: font-size 1500ms;
+                    font-size: 1.8vw;
+                }
             }
         }
     }
