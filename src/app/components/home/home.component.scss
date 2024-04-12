@@ -1,101 +1,97 @@
-// Animaciones
-
-@keyframes P-Animation {
-    0% {background-position: top;}
-    30% {background-position: bottom;}
-    100% {background-image: none; background-color: black; opacity: 1;}
-}
-@keyframes P-Animation-Text {
-    30% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@keyframes P-SaltaVincula-A {
-    0% {
-        background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
-    }
-    20% {
-        background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula2.png);
-    }
-    40% {
-        background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula3.png);
-    }
-    100% {
-        background-image: none; background-color: black;
-    }
-}
-@keyframes P-DentCorp-A {
-    0% {
-        background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
-    }
-    20% {
-        background-image: url(..//..//..//assets/img/P-DentCorp/2.png);
-    }
-    20% {
-        background-image: url(..//..//..//assets/img/P-DentCorp/3.png);
-    }
-    60% {
-        background-image: url(..//..//..//assets/img/P-DentCorp/4.png);
-    }
-    100% {
-        background-image: none; background-color: black;
-    }
-}
-@keyframes P-SistemaProductos-A {
-    0% {
-        background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
-    }
-    20% {
-        background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos2.png);
-    }
-    20% {
-        background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos3.png);
-    }
-    60% {
-        background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos4.png);
-    }
-    100% {
-        background-image: none; background-color: black;
-    }
-}
-@keyframes escribirNombre {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 0;
-    }
-}
-@keyframes descripcion-A {
-    from {
-        height: 0vw;
-    }
-    to {
-        height: 20vw;
-    }
-}
-@keyframes descripcion-A-M {
-    from {
-        height: 0vw;
-    }
-    to {
-        height: 38vw;
-    }
-}
-@keyframes descripcion-p-A {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-// Estilo mobile
 @media all and (min-width: 992px) {
+    @keyframes P-Animation {
+        0% {background-position: top;}
+        30% {background-position: bottom;}
+        100% {background-image: none; background-color: black; opacity: 1;}
+    }
+    @keyframes P-Animation-Text {
+        30% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes P-SaltaVincula-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula2.png);
+        }
+        40% {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula3.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes P-DentCorp-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/2.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/3.png);
+        }
+        60% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/4.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes P-SistemaProductos-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos2.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos3.png);
+        }
+        60% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos4.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes escribirNombre {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 0;
+        }
+    }
+    @keyframes descripcion-A {
+        from {
+            height: 0vw;
+        }
+        to {
+            height: 20vw;
+        }
+    }
+    @keyframes descripcion-A-M {
+        from {
+            height: 0vw;
+        }
+        to {
+            height: 38vw;
+        }
+    }
+    @keyframes descripcion-p-A {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
     // Estilo General
 div.introduccion {
     text-align: center;
@@ -293,6 +289,99 @@ div.tecnologias-aprendidas {
 }
 }
 @media all and (max-width: 991px){
+    @keyframes P-Animation {
+        0% {background-position: top;}
+        30% {background-position: bottom;}
+        100% {background-image: none; background-color: black; opacity: 1;}
+    }
+    @keyframes P-Animation-Text {
+        30% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes P-SaltaVincula-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula2.png);
+        }
+        40% {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula3.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes P-DentCorp-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/2.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/3.png);
+        }
+        60% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/4.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes P-SistemaProductos-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos2.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos3.png);
+        }
+        60% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos4.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes escribirNombre {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 0;
+        }
+    }
+    @keyframes descripcion-A {
+        from {
+            height: 0vw;
+        }
+        to {
+            height: 20vw;
+        }
+    }
+    @keyframes descripcion-A-M {
+        from {
+            height: 0vw;
+        }
+        to {
+            height: 38vw;
+        }
+    }
+    @keyframes descripcion-p-A {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
     div.introduccion {
         text-align: center;
         h1 {
