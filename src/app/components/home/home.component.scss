@@ -389,19 +389,19 @@ div.tecnologias-aprendidas {
                 background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
                 background-size: cover;
                 background-position: center;
-                animation: P-DentCorp-A 15s forwards infinite 5s;
+                animation: P-DentCorp-A 15s forwards infinite 4s;
                 p {
-                    animation: P-Animation-Text 15s forwards infinite 5s;
+                    animation: P-Animation-Text 15s forwards infinite 4s;
                 }
             }
             div.P-SistemaProductos {
                 background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
                 background-size: cover;
                 background-position: center; 
-                animation: P-SistemaProductos-A 15s forwards infinite 5s; 
+                animation: P-SistemaProductos-A 15s forwards infinite 4s; 
 
                 p {
-                    animation: P-Animation-Text 15s forwards infinite 5s;
+                    animation: P-Animation-Text 15s forwards infinite 4s;
                 }
             }
             div.P-SaltaVincula {
@@ -409,16 +409,16 @@ div.tecnologias-aprendidas {
                 background-size: contain;
                 background-position: center;
                 background-color: rgb(87, 87, 87);
-                animation: P-SaltaVincula-A 15s forwards infinite 5s;
+                animation: P-SaltaVincula-A 15s forwards infinite 4s;
                 p {
-                    animation: P-Animation-Text 15s forwards infinite 6s;
+                    animation: P-Animation-Text 15s forwards infinite 5s;
                 }
             }
             div.desktop {
-                animation: P-Animation 15s forwards infinite 5s;
+                animation: P-Animation 15s forwards infinite 4s;
     
                 p {
-                    animation: P-Animation-Text 15s forwards infinite 5s;
+                    animation: P-Animation-Text 15s forwards infinite 4s;
                 }
             }
         }
@@ -460,12 +460,12 @@ div.tecnologias-aprendidas {
             div.tecnologia-contenedor:hover {
                 img {
                     transition: width 1500ms, height 1500ms;
-                    width: 7vw;
-                    height: 7vw;
+                    width: 12vw;
+                    height: 12vw;
                 }
                 p {
                     transition: font-size 1500ms;
-                    font-size: 1.8vw;
+                    font-size: 6vw;
                 }
             }
         }
