@@ -371,7 +371,7 @@ div.tecnologias-aprendidas {
             height: 0vw;
         }
         to {
-            height: 38vw;
+            height: 53vw;
         }
     }
     @keyframes descripcion-p-A {
@@ -423,7 +423,7 @@ div.tecnologias-aprendidas {
             text-align: center;
             color: white;
             font-weight: 500;
-            font-size: 3.8vw;
+            font-size: 4.5vw;
             opacity: 0;
             animation: descripcion-p-A 4s forwards 1800ms;
         }
@@ -490,7 +490,7 @@ div.tecnologias-aprendidas {
                 animation: P-SistemaProductos-A 15s forwards infinite 4s; 
 
                 p {
-                    animation: P-Animation-Text 15s forwards infinite 4s;
+                    animation: P-Animation-Text 18s forwards infinite 4s;
                 }
             }
             div.P-SaltaVincula {
