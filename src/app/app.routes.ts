@@ -6,6 +6,6 @@ import { CvComponent } from './components/cv/cv.component';
 export const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'contact', component: ContactComponent},
-    {path: 'CV', component: CvComponent},
+    {path: 'cv', component: CvComponent},
     {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
