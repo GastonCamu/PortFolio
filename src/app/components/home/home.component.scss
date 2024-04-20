@@ -551,10 +551,14 @@ div.tecnologias-aprendidas {
                     transition: width 1500ms, height 1500ms;
                     width: 12vw;
                     height: 12vw;
+                    margin: 0;
+                    padding: 0;
                 }
                 p {
                     transition: font-size 1500ms;
                     font-size: 6vw;
+                    margin: 0;
+                    padding: 0;
                 }
             }
         }
