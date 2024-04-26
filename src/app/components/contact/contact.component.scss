@@ -1,0 +1,146 @@
+@media all and (min-width: 992px) {
+    div.contact-body {
+        background-color: rgba(85, 31, 156, 0.932);
+        padding: 5vw 0;
+    
+        div.contact-container {
+            border-radius: 10px;
+            display: flex;
+            margin: auto;
+            background-color: white;
+            width: 75%;
+            align-items: center;
+    
+            div {
+                display: flex;
+                justify-content: center;
+                background-color: transparent;
+                width: 30%;
+                margin: auto;
+                img {
+                    width: 25vw;
+                    height: 25vw;
+                }
+            }
+            form {
+                border: none;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                width: 50%;
+                h2 {
+                    font-size: 2.5vw;
+                    text-align: center;
+                    margin: 1vw 0;
+                }
+                label {
+                    font-size: 1.4vw;
+                    font-weight: 500;
+                }
+                input {
+                    outline: none;
+                    border: none;
+                    border-bottom: 3px solid black;
+                    margin-bottom: 1vw;
+                }
+                input:focus {
+                    border-bottom: 3px solid rgb(85, 31, 156);
+                }
+                textarea {
+                    resize: none;
+                    outline: none;
+                    border: none;
+                    background-color: rgb(231, 231, 231);
+                    border-radius: 8px;
+                    height: 13vw;
+                    padding: 2px 4px;
+                }
+                button {
+                    display: inline-block;
+                    vertical-align: center;
+                    font-size: 1.5vw;
+                    font-weight: 500;
+                    margin: 2vw auto;
+                    width: 12vw;
+                    height: 3vw;
+                    outline: none;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: rgb(85, 31, 156);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 991px){
+    div.contact-body {
+        background-color: rgba(85, 31, 156, 0.932);
+        padding: 5vw 0 15vw 0;
+    
+        div.contact-container {
+            border-radius: 5px;
+            display: flex;
+            margin: auto;
+            background-color: white;
+            width: 95%;
+            align-items: center;
+    
+            div {
+                display: none;
+            }
+            form {
+                border: none;
+                border-radius: 5px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                h2 {
+                    font-size: 8vw;
+                    text-align: center;
+                    margin: 1vw 0 4vw 0;
+                }
+                label {
+                    font-size: 5vw;
+                    text-align: center;
+                    font-weight: 500;
+                }
+                input {
+                    outline: none;
+                    border: none;
+                    border-bottom: 3px solid black;
+                    margin-bottom: 6vw;
+                }
+                input:focus {
+                    border-bottom: 3px solid rgb(85, 31, 156);
+                }
+                textarea {
+                    resize: none;
+                    outline: none;
+                    border: none;
+                    background-color: rgb(231, 231, 231);
+                    border-radius: 8px;
+                    height: 40vw;
+                    padding: 2px 4px;
+                    margin-bottom: 6vw;
+                }
+                button {
+                    display: inline-block;
+                    vertical-align: center;
+                    font-size: 5.5vw;
+                    font-weight: 500;
+                    margin: 2vw auto;
+                    width: 37vw;
+                    height: 9vw;
+                    outline: none;
+                    border: none;
+                    border-radius: 8px;
+                    background-color: rgb(85, 31, 156);
+                    color: white;
+                }
+            }
+        }
+    }
+}
