@@ -4,22 +4,46 @@
             <img src="./assets/img/correo.png" alt="correo">
         </div>
         <form
+        [formGroup]="contactForm"
+        novalidate
+        (ngSubmit)="submitForm($event)"
         action="https://formspree.io/f/meqyvyje"
         method="POST">
         <h2>Formulario de contacto</h2>
+
         <label>Nombre</label>
-        <input placeholder="Gastón Camú" type="text" name="nombre:">
-    
+        <input formControlName="nombre" placeholder="Gastón Camú" type="text" name="nombre:"
+        [ngClass]="{'is-invalid': hasErrors('nombre', 'required')}">
+        @if (hasErrors('nombre', 'required')) {
+            <span class="text-danger">Completar este campo</span>
+        }
+
         <label>Email</label>
-        <input placeholder="ejemplo@gmail.com" type="email" name="email:">
-    
+        <input formControlName="email" placeholder="nombre@ejemplo.com" type="email" name="email:"
+        [ngClass]="{'is-invalid': hasErrors('email', 'required')}">
+        @if (hasErrors('email', 'required')) {
+            <span class="text-danger">Completar este campo</span>
+        }
+        @if (hasErrors('email', 'email')) {
+            <span class="text-danger">Formato de email invalido</span>
+        }
+
         <label>Asunto</label>
-        <input placeholder="Ayudame con un proyecto." type="text" name="asunto:">
+        <input formControlName="asunto" placeholder="Ayúdame con un proyecto." type="text" name="asunto:"
+        [ngClass]="{'is-invalid': hasErrors('asunto', 'required')}">
+        @if (hasErrors('asunto', 'required')) {
+            <span class="text-danger">Completar este campo</span>
+        }
 
         <label>Mensaje</label>
-        <textarea placeholder="Escribí aqui tu mensaje." name="mensaje:" cols="15" rows="5"></textarea>
-    
+        <textarea formControlName="mensaje" placeholder="Escribe aquí tu mensaje." name="mensaje:" cols="15" rows="5"
+        [ngClass]="{'is-invalid': hasErrors('mensaje', 'required')}"></textarea>
+        @if (hasErrors('mensaje', 'required')) {
+            <span class="text-danger">Completar este campo</span>
+        }
+
         <button type="submit">Enviar</button>
+
         </form>
     </div>
 </div>
