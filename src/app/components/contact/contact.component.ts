@@ -42,7 +42,7 @@ export class ContactComponent {
         body: formData
       })
       alert("Formulario enviado exitosamente")
-      this.router.navigate(['/']);
+      this.router.navigate(['/home']);
     }
     else {
       alert('El formulario no es válido');
