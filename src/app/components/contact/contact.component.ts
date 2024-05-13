@@ -1,6 +1,7 @@
 import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -13,7 +14,7 @@ export class ContactComponent {
 
   contactForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder,  private router :Router) {
     this.contactForm = this.formBuilder.group({
       nombre: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
@@ -41,6 +42,7 @@ export class ContactComponent {
         body: formData
       })
       alert("Formulario enviado exitosamente")
+      this.router.navigate(['/']);
     }
     else {
       alert('El formulario no es válido');
