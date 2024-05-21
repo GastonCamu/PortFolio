@@ -2,6 +2,7 @@ import { NgClass } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-contact',
@@ -41,11 +42,23 @@ export class ContactComponent {
         method: 'POST',
         body: formData
       })
-      alert("Formulario enviado exitosamente")
+      Swal.fire({
+        title: 'Se envió con éxito!',
+        text: 'El formulario se ha enviado exitosamente',
+        icon: 'success',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#551f9c'
+      })
       this.router.navigate(['/home']);
     }
     else {
-      alert('El formulario no es válido');
+      Swal.fire({
+        title: 'Advertencia!',
+        text: 'El formulario no es válido',
+        icon: 'warning',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#551f9c'
+      })
     }
   }
   

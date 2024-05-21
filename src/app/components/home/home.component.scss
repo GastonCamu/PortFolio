@@ -1,297 +1,4 @@
-@media all and (min-width: 992px) {
-    @keyframes P-Animation {
-        0% {background-position: top;}
-        30% {background-position: bottom;}
-        100% {background-image: none; background-color: black; opacity: 1;}
-    }
-    @keyframes P-Animation-Text {
-        30% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @keyframes P-SaltaVincula-A {
-        0% {
-            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula2.png);
-        }
-        40% {
-            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula3.png);
-        }
-        100% {
-            background-image: none; background-color: black;
-        }
-    }
-    @keyframes P-DentCorp-A {
-        0% {
-            background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-DentCorp/2.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-DentCorp/3.png);
-        }
-        60% {
-            background-image: url(..//..//..//assets/img/P-DentCorp/4.png);
-        }
-        100% {
-            background-image: none; background-color: black;
-        }
-    }
-    @keyframes P-SistemaProductos-A {
-        0% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos2.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos3.png);
-        }
-        60% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos4.png);
-        }
-        100% {
-            background-image: none; background-color: black;
-        }
-    }
-    @keyframes escribirNombre {
-        from {
-            width: 100%;
-        }
-        to {
-            width: 0;
-        }
-    }
-    @keyframes descripcion-A {
-        from {
-            height: 0vw;
-        }
-        to {
-            height: 20vw;
-        }
-    }
-    @keyframes descripcion-A-M {
-        from {
-            height: 0vw;
-        }
-        to {
-            height: 38vw;
-        }
-    }
-    @keyframes descripcion-p-A {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    // Estilo General
-div.introduccion {
-    text-align: center;
-    h1 {
-        color: black;
-    }
-    div {
-        margin: auto;
-        display: table;
-        h2 {
-            user-select: none;
-            font-family: monospace;
-            position: relative;
-            float: center;
-            color: black;
-            background-color: white;
-            font-size: 2.5vw;
-            font-weight: 1000;
-            span {
-                position:absolute;
-                right:0;
-                width:0;
-                background: white;
-                border-left: 3px solid rgb(85, 31, 156);
-                animation: escribirNombre 1900ms steps(12) infinite alternate;
-            }
-        }
-    }
-}
-div.descripcion {
-    display: flex;
-    margin: 2vw 0;
-    height: 0vw;
-    background-color: rgb(85, 31, 156);
-    animation: descripcion-A 5s forwards 1300ms;
-    p.descripcion-p {
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        color: white;
-        font-size: 1.7vw;
-        font-weight: 500;
-        opacity: 0;
-        animation: descripcion-p-A 5s forwards 1300ms;
-    }
-}
-h3 {
-    margin: 2vw 0 2vw 1.3vw;
-}
-div.galeria-proyectos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    a {
-        text-decoration: none;
-        div {
-            margin-bottom: 3vw;
-            width: 27vw;
-            height: 18vw;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            p {
-                opacity: 0;
-                text-align: center;
-                width: 90%;
-                font-size: 1.5vw;
-                color: white;
-                font-weight: bolder;
-            }
-        }
-        div.P-Portfolio {
-            background-image: url(..//..//..//assets/img/P-Portfolio.jpeg);
-        }
-        div.P-Traveleate {
-            background-image: url(..//..//..//assets/img/P-Traveleate.jpeg);
-            
-        }
-        div.P-1Portfolio {
-            background-image: url(..//..//..//assets/img/P-1Portfolio.jpeg);
-        }
-        div.P-LandingPageAngular17 {
-            background-image: url(..//..//..//assets/img/P-LandingPageAngular17.jpeg);
-        }
-        div.P-ListaDeTareas {
-            background-image: url(..//..//..//assets/img/P-ListaDeTareas.jpeg);
-            background-size: cover;
-            background-position: center;
-        }
-        div.P-DentCorp {
-            background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
-            background-size: cover;
-            background-position: center;
-        }
-        div.P-DentCorp:hover {
-            animation-name: P-DentCorp-A;
-            animation-duration: 5s;
-            animation-fill-mode: forwards;
-            p {
-                animation-name: P-Animation-Text;
-                animation-duration: 6s;
-                animation-fill-mode: forwards;
-            }
-        }
-        div.P-SistemaProductos {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
-            background-size: cover;
-            background-position: center;  
-        }
-        div.P-SistemaProductos:hover {
-            animation-name: P-SistemaProductos-A;
-            animation-duration: 4s;
-            animation-fill-mode: forwards;
-            p {
-                animation-name: P-Animation-Text;
-                animation-duration: 6s;
-                animation-fill-mode: forwards;
-            }
-        }
-        div.P-SaltaVincula:hover {
-            animation-name: P-SaltaVincula-A;
-            animation-duration: 4s;
-            animation-fill-mode: forwards;
-            p {
-                animation-name: P-Animation-Text;
-                animation-duration: 6s;
-                animation-fill-mode: forwards;
-            }
-
-        }
-        div.P-SaltaVincula {
-            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
-            background-size: contain;
-            background-position: center;
-            background-color: rgb(87, 87, 87);
-        }
-        div.desktop:hover {
-            animation-name: P-Animation;
-            animation-duration: 4s;
-            animation-fill-mode: forwards;
-
-            p {
-                animation-name: P-Animation-Text;
-                animation-duration: 4s;
-                animation-fill-mode: forwards;
-            }
-        }
-    }
-}
-div.tecnologias-aprendidas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(85, 31, 156);
-    margin-bottom: 10vw;
-    height: 40vw;
-    width: 100%;
-    h4 {
-        text-align: center;
-        font-size: 3vw;
-        color: white;
-    }
-    div.tecnologias {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 3vw 0;
-        div.tecnologia-contenedor {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            img {
-                transition: width 2s, height 2s;
-                width: 5vw;
-                height: 5vw;
-            }
-            p {
-                text-align: center;
-                transition: font-size 2s;
-                font-weight: 1000;
-                font-size: 1.3vw;
-            }
-        }
-        div.tecnologia-contenedor:hover {
-            img {
-                transition: width 1500ms, height 1500ms;
-                width: 7vw;
-                height: 7vw;
-            }
-            p {
-                transition: font-size 1500ms;
-                font-size: 1.8vw;
-            }
-        }
-    }
-}
-}
+// Media para celulares
 @media all and (max-width: 991px){
     @keyframes P-Animation {
         0% {background-position: top;}
@@ -332,6 +39,26 @@ div.tecnologias-aprendidas {
         }
         60% {
             background-image: url(..//..//..//assets/img/P-DentCorp/4.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes P-Traveleate-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate1.png);
+        }
+        15% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate2.png);
+        }
+        30% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate3.png);
+        }
+        45% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate4.png);
+        }
+        60% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate5.png);
         }
         100% {
             background-image: none; background-color: black;
@@ -467,7 +194,14 @@ div.tecnologias-aprendidas {
                 background-image: url(..//..//..//assets/img/P-Portfolio.jpeg);
             }
             div.P-Traveleate {
-                background-image: url(..//..//..//assets/img/P-Traveleate.jpeg);
+                background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate1.png);
+                background-size: cover;
+                background-position: center; 
+                animation: P-Traveleate-A 15s forwards infinite 4s; 
+
+                p {
+                    animation: P-Animation-Text 18s forwards infinite 4s;
+                }
                 
             }
             div.P-1Portfolio {
@@ -571,4 +305,332 @@ div.tecnologias-aprendidas {
             }
         }
     }
+}
+
+// Media para computadoras
+@media all and (min-width: 992px) {
+    @keyframes P-Animation {
+        0% {background-position: top;}
+        30% {background-position: bottom;}
+        100% {background-image: none; background-color: black; opacity: 1;}
+    }
+    @keyframes P-Animation-Text {
+        30% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes P-SaltaVincula-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula2.png);
+        }
+        40% {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula3.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes P-DentCorp-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/2.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/3.png);
+        }
+        60% {
+            background-image: url(..//..//..//assets/img/P-DentCorp/4.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes P-SistemaProductos-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos2.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos3.png);
+        }
+        60% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos4.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes P-Traveleate-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate2.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate3.png);
+        }
+        60% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate4.png);
+        }
+        80% {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate5.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes escribirNombre {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 0;
+        }
+    }
+    @keyframes descripcion-A {
+        from {
+            height: 0vw;
+        }
+        to {
+            height: 20vw;
+        }
+    }
+    @keyframes descripcion-A-M {
+        from {
+            height: 0vw;
+        }
+        to {
+            height: 38vw;
+        }
+    }
+    @keyframes descripcion-p-A {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    // Estilo General
+div.introduccion {
+    text-align: center;
+    h1 {
+        color: black;
+    }
+    div {
+        margin: auto;
+        display: table;
+        h2 {
+            user-select: none;
+            font-family: monospace;
+            position: relative;
+            float: center;
+            color: black;
+            background-color: white;
+            font-size: 2.5vw;
+            font-weight: 1000;
+            span {
+                position:absolute;
+                right:0;
+                width:0;
+                background: white;
+                border-left: 3px solid rgb(85, 31, 156);
+                animation: escribirNombre 1900ms steps(12) infinite alternate;
+            }
+        }
+    }
+}
+div.descripcion {
+    display: flex;
+    margin: 2vw 0;
+    height: 0vw;
+    background-color: #551f9c;
+    animation: descripcion-A 5s forwards 1300ms;
+    p.descripcion-p {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        color: white;
+        font-size: 1.7vw;
+        font-weight: 500;
+        opacity: 0;
+        animation: descripcion-p-A 5s forwards 1300ms;
+    }
+}
+h3 {
+    margin: 2vw 0 2vw 1.3vw;
+}
+div.galeria-proyectos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    a {
+        text-decoration: none;
+        div {
+            margin-bottom: 3vw;
+            width: 27vw;
+            height: 18vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            p {
+                opacity: 0;
+                text-align: center;
+                width: 90%;
+                font-size: 1.5vw;
+                color: white;
+                font-weight: bolder;
+            }
+        }
+        div.P-Portfolio {
+            background-image: url(..//..//..//assets/img/P-Portfolio.jpeg);
+        }
+        div.P-Traveleate {
+            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate1.png);
+            background-size: cover;
+            background-position: center; 
+            
+        }
+        div.P-Traveleate:hover {
+            animation-name: P-Traveleate-A;
+            animation-duration: 6s;
+            animation-fill-mode: forwards;
+            p {
+                animation-name: P-Animation-Text;
+                animation-duration: 11s;
+                animation-fill-mode: forwards;
+            }
+        }
+        div.P-1Portfolio {
+            background-image: url(..//..//..//assets/img/P-1Portfolio.jpeg);
+        }
+        div.P-LandingPageAngular17 {
+            background-image: url(..//..//..//assets/img/P-LandingPageAngular17.jpeg);
+        }
+        div.P-ListaDeTareas {
+            background-image: url(..//..//..//assets/img/P-ListaDeTareas.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        div.P-DentCorp {
+            background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
+            background-size: cover;
+            background-position: center;
+        }
+        div.P-DentCorp:hover {
+            animation-name: P-DentCorp-A;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            p {
+                animation-name: P-Animation-Text;
+                animation-duration: 6s;
+                animation-fill-mode: forwards;
+            }
+        }
+        div.P-SistemaProductos {
+            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
+            background-size: cover;
+            background-position: center;  
+        }
+        div.P-SistemaProductos:hover {
+            animation-name: P-SistemaProductos-A;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            p {
+                animation-name: P-Animation-Text;
+                animation-duration: 6s;
+                animation-fill-mode: forwards;
+            }
+        }
+        div.P-SaltaVincula:hover {
+            animation-name: P-SaltaVincula-A;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            p {
+                animation-name: P-Animation-Text;
+                animation-duration: 6s;
+                animation-fill-mode: forwards;
+            }
+
+        }
+        div.P-SaltaVincula {
+            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
+            background-size: contain;
+            background-position: center;
+            background-color: rgb(87, 87, 87);
+        }
+        div.desktop:hover {
+            animation-name: P-Animation;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+
+            p {
+                animation-name: P-Animation-Text;
+                animation-duration: 4s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+div.tecnologias-aprendidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(85, 31, 156);
+    margin-bottom: 10vw;
+    height: 40vw;
+    width: 100%;
+    h4 {
+        text-align: center;
+        font-size: 3vw;
+        color: white;
+    }
+    div.tecnologias {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 3vw 0;
+        div.tecnologia-contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                transition: width 2s, height 2s;
+                width: 5vw;
+                height: 5vw;
+            }
+            p {
+                text-align: center;
+                transition: font-size 2s;
+                font-weight: 1000;
+                font-size: 1.3vw;
+            }
+        }
+        div.tecnologia-contenedor:hover {
+            img {
+                transition: width 1500ms, height 1500ms;
+                width: 7vw;
+                height: 7vw;
+            }
+            p {
+                transition: font-size 1500ms;
+                font-size: 1.8vw;
+            }
+        }
+    }
+}
 }
