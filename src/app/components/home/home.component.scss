@@ -64,18 +64,18 @@
             background-image: none; background-color: black;
         }
     }
-    @keyframes P-SistemaProductos-A {
+    @keyframes P-SistemaProductosTkinter-A {
         0% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
+            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos1.png);
         }
         20% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos2.png);
+            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos2.png);
         }
         20% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos3.png);
+            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos3.png);
         }
         60% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos4.png);
+            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos4.png);
         }
         100% {
             background-image: none; background-color: black;
@@ -189,6 +189,9 @@
                     color: white;
                     font-weight: bolder;
                 }
+                button {
+                    display: none;
+                }
             }
             div.P-Portfolio {
                 background-image: url(..//..//..//assets/img/P-Portfolio.jpeg);
@@ -224,11 +227,11 @@
                     animation: P-Animation-Text 15s forwards infinite 4s;
                 }
             }
-            div.P-SistemaProductos {
-                background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
+            div.P-SistemaProductosTkinter {
+                background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos1.png);
                 background-size: cover;
                 background-position: center; 
-                animation: P-SistemaProductos-A 15s forwards infinite 4s; 
+                animation: P-SistemaProductosTkinter-A 15s forwards infinite 4s; 
 
                 p {
                     animation: P-Animation-Text 18s forwards infinite 4s;
@@ -353,18 +356,44 @@
             background-image: none; background-color: black;
         }
     }
-    @keyframes P-SistemaProductos-A {
+    @keyframes P-ListaDeTareas-A {
         0% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
+            background-image: url(..//..//..//assets/img/P-ListaDeTareas.jpeg);
+        }
+        100% {
+            background-image: none;
+            background-color: black;
+        }
+    }
+    @keyframes P-SistemaProductosTkinter-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos1.png);
         }
         20% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos2.png);
+            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos2.png);
         }
         20% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos3.png);
+            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos3.png);
         }
         60% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos4.png);
+            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos4.png);
+        }
+        100% {
+            background-image: none; background-color: black;
+        }
+    }
+    @keyframes P-SistemaProductosAngular-A {
+        0% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductosAngular/P-SistemaProductosAngular1.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductosAngular/P-SistemaProductosAngular2.png);
+        }
+        20% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductosAngular/P-SistemaProductosAngular3.png);
+        }
+        60% {
+            background-image: url(..//..//..//assets/img/P-SistemaProductosAngular/P-SistemaProductosAngular4.png);
         }
         100% {
             background-image: none; background-color: black;
@@ -372,18 +401,15 @@
     }
     @keyframes P-Traveleate-A {
         0% {
-            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate1.png);
-        }
-        20% {
             background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate2.png);
         }
-        20% {
+        30% {
             background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate3.png);
         }
         60% {
             background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate4.png);
         }
-        80% {
+        90% {
             background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate5.png);
         }
         100% {
@@ -496,6 +522,9 @@ div.galeria-proyectos {
                 color: white;
                 font-weight: bolder;
             }
+            button {
+                display: none;
+            }
         }
         div.P-Portfolio {
             background-image: url(..//..//..//assets/img/P-Portfolio.jpeg);
@@ -503,16 +532,33 @@ div.galeria-proyectos {
         div.P-Traveleate {
             background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate1.png);
             background-size: cover;
-            background-position: center; 
-            
+            background-position: center;
         }
         div.P-Traveleate:hover {
             animation-name: P-Traveleate-A;
-            animation-duration: 6s;
+            animation-duration: 9s;
             animation-fill-mode: forwards;
             p {
                 animation-name: P-Animation-Text;
-                animation-duration: 11s;
+                animation-duration: 5s;
+                animation-delay: 7s;
+                animation-fill-mode: forwards;
+            }
+        }
+        div.P-SistemaProductosAngular {
+            background-color: rgb(223, 223, 223);
+            background-image: url(..//..//..//assets/img/P-SistemaProductosAngular/P-SistemaProductosAngular1.png);
+            background-size: contain;
+            background-position: center;
+        }
+        div.P-SistemaProductosAngular:hover {
+            animation-name: P-SistemaProductosAngular-A;
+            animation-duration: 8s;
+            animation-fill-mode: forwards;
+            p {
+                animation-name: P-Animation-Text;
+                animation-delay: 6s;
+                animation-duration: 2s;
                 animation-fill-mode: forwards;
             }
         }
@@ -526,6 +572,12 @@ div.galeria-proyectos {
             background-image: url(..//..//..//assets/img/P-ListaDeTareas.jpeg);
             background-size: cover;
             background-position: center;
+        }
+        div.P-ListaDeTareas:hover {
+            animation: P-ListaDeTareas-A 1s forwards;
+            p {
+               animation: P-Animation-Text 2s forwards; 
+            }
         }
         div.P-DentCorp {
             background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
@@ -542,13 +594,13 @@ div.galeria-proyectos {
                 animation-fill-mode: forwards;
             }
         }
-        div.P-SistemaProductos {
-            background-image: url(..//..//..//assets/img/P-SistemaProductos/P-SistemaProductos1.png);
+        div.P-SistemaProductosTkinter {
+            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos1.png);
             background-size: cover;
             background-position: center;  
         }
-        div.P-SistemaProductos:hover {
-            animation-name: P-SistemaProductos-A;
+        div.P-SistemaProductosTkinter:hover {
+            animation-name: P-SistemaProductosTkinter-A;
             animation-duration: 4s;
             animation-fill-mode: forwards;
             p {
