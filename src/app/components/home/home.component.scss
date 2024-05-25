@@ -24,6 +24,14 @@
             opacity: 1;
         }
     }
+    @keyframes P-Animation-Text {
+        60% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
     div.introduccion {
         text-align: center;
         h1 {
@@ -94,12 +102,15 @@
                 justify-content: center;
                 align-items: center;
                 p {
-                    opacity: 0;
+                    animation: P-Animation-Text 10s infinite 5s;
                     text-align: center;
                     width: 90%;
                     font-size: 5vw;
                     color: white;
                     font-weight: bolder;
+                    background-color: rgba(0, 0, 0, 0.952);
+                    border-radius: 10px;
+                    padding: 1vw;
                 }
             }
             div.P-Portfolio {
