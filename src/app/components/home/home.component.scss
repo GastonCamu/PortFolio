@@ -201,6 +201,14 @@
 
 // Media para computadoras
 @media all and (min-width: 992px) {
+    @keyframes escribirNombre {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 0;
+        }
+    }
     @keyframes P-Animation {
         0% {background-position: top;}
         30% {background-position: bottom;}
