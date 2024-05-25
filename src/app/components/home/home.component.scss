@@ -25,11 +25,17 @@
         }
     }
     @keyframes P-Animation-Text {
-        60% {
+        0% {
             opacity: 0;
         }
-        100% {
+        60% {
             opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
         }
     }
     div.introduccion {
@@ -102,7 +108,7 @@
                 justify-content: center;
                 align-items: center;
                 p {
-                    animation: P-Animation-Text 10s infinite 5s;
+                    animation: P-Animation-Text 10s infinite;
                     text-align: center;
                     width: 90%;
                     font-size: 5vw;
