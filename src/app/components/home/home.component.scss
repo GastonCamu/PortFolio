@@ -1,86 +1,5 @@
 // Media para celulares
-@media all and (max-width: 991px){
-    @keyframes P-Animation {
-        0% {background-position: top;}
-        30% {background-position: bottom;}
-        100% {background-image: none; background-color: black; opacity: 1;}
-    }
-    @keyframes P-Animation-Text {
-        30% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    @keyframes P-SaltaVincula-A {
-        0% {
-            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula2.png);
-        }
-        40% {
-            background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula3.png);
-        }
-        100% {
-            background-image: none; background-color: black;
-        }
-    }
-    @keyframes P-DentCorp-A {
-        0% {
-            background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-DentCorp/2.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-DentCorp/3.png);
-        }
-        60% {
-            background-image: url(..//..//..//assets/img/P-DentCorp/4.png);
-        }
-        100% {
-            background-image: none; background-color: black;
-        }
-    }
-    @keyframes P-Traveleate-A {
-        0% {
-            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate1.png);
-        }
-        15% {
-            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate2.png);
-        }
-        30% {
-            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate3.png);
-        }
-        45% {
-            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate4.png);
-        }
-        60% {
-            background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate5.png);
-        }
-        100% {
-            background-image: none; background-color: black;
-        }
-    }
-    @keyframes P-SistemaProductosTkinter-A {
-        0% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos1.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos2.png);
-        }
-        20% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos3.png);
-        }
-        60% {
-            background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos4.png);
-        }
-        100% {
-            background-image: none; background-color: black;
-        }
-    }
+@media all and (max-width: 991px){ 
     @keyframes escribirNombre {
         from {
             width: 100%;
@@ -89,20 +8,12 @@
             width: 0;
         }
     }
-    @keyframes descripcion-A {
-        from {
-            height: 0vw;
-        }
-        to {
-            height: 20vw;
-        }
-    }
     @keyframes descripcion-A-M {
         from {
             height: 0vw;
         }
         to {
-            height: 53vw;
+            height: 58vw;
         }
     }
     @keyframes descripcion-p-A {
@@ -170,6 +81,7 @@
         flex-wrap: wrap;
         a {
             text-decoration: none;
+            pointer-events: stroke;
             div {
                 margin-bottom: 20vw;
                 width: 90vw;
@@ -189,9 +101,6 @@
                     color: white;
                     font-weight: bolder;
                 }
-                button {
-                    display: none;
-                }
             }
             div.P-Portfolio {
                 background-image: url(..//..//..//assets/img/P-Portfolio.jpeg);
@@ -199,13 +108,13 @@
             div.P-Traveleate {
                 background-image: url(..//..//..//assets/img/P-Traveleate/P-Traveleate1.png);
                 background-size: cover;
-                background-position: center; 
-                animation: P-Traveleate-A 15s forwards infinite 4s; 
-
-                p {
-                    animation: P-Animation-Text 18s forwards infinite 4s;
-                }
-                
+                background-position: center;
+            }
+            div.P-SistemaProductosAngular {
+                background-color: rgb(223, 223, 223);
+                background-image: url(..//..//..//assets/img/P-SistemaProductosAngular/P-SistemaProductosAngular1.png);
+                background-size: contain;
+                background-position: center;
             }
             div.P-1Portfolio {
                 background-image: url(..//..//..//assets/img/P-1Portfolio.jpeg);
@@ -222,37 +131,17 @@
                 background-image: url(..//..//..//assets/img/P-DentCorp/1.png);
                 background-size: cover;
                 background-position: center;
-                animation: P-DentCorp-A 15s forwards infinite 4s;
-                p {
-                    animation: P-Animation-Text 15s forwards infinite 4s;
-                }
             }
             div.P-SistemaProductosTkinter {
                 background-image: url(..//..//..//assets/img/P-SistemaProductosTkinter/P-SistemaProductos1.png);
                 background-size: cover;
-                background-position: center; 
-                animation: P-SistemaProductosTkinter-A 15s forwards infinite 4s; 
-
-                p {
-                    animation: P-Animation-Text 18s forwards infinite 4s;
-                }
+                background-position: center;  
             }
             div.P-SaltaVincula {
                 background-image: url(..//..//..//assets/img/P-SaltaVincula/P-SaltaVincula1.png);
                 background-size: contain;
                 background-position: center;
                 background-color: rgb(87, 87, 87);
-                animation: P-SaltaVincula-A 15s forwards infinite 4s;
-                p {
-                    animation: P-Animation-Text 15s forwards infinite 5s;
-                }
-            }
-            div.desktop {
-                animation: P-Animation 15s forwards infinite 4s;
-    
-                p {
-                    animation: P-Animation-Text 15s forwards infinite 4s;
-                }
             }
         }
     }
@@ -416,28 +305,12 @@
             background-image: none; background-color: black;
         }
     }
-    @keyframes escribirNombre {
-        from {
-            width: 100%;
-        }
-        to {
-            width: 0;
-        }
-    }
     @keyframes descripcion-A {
         from {
             height: 0vw;
         }
         to {
             height: 20vw;
-        }
-    }
-    @keyframes descripcion-A-M {
-        from {
-            height: 0vw;
-        }
-        to {
-            height: 38vw;
         }
     }
     @keyframes descripcion-p-A {
@@ -482,7 +355,7 @@ div.descripcion {
     margin: 2vw 0;
     height: 0vw;
     background-color: #551f9c;
-    animation: descripcion-A 5s forwards 1300ms;
+    animation: descripcion-A 3s forwards 1300ms;
     p.descripcion-p {
         width: 80%;
         margin: auto;
@@ -491,7 +364,7 @@ div.descripcion {
         font-size: 1.7vw;
         font-weight: 500;
         opacity: 0;
-        animation: descripcion-p-A 5s forwards 1300ms;
+        animation: descripcion-p-A 3s forwards 1300ms;
     }
 }
 h3 {
@@ -521,9 +394,6 @@ div.galeria-proyectos {
                 font-size: 1.5vw;
                 color: white;
                 font-weight: bolder;
-            }
-            button {
-                display: none;
             }
         }
         div.P-Portfolio {
