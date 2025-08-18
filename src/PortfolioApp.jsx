@@ -3,10 +3,13 @@ import techData from './data/technologies.json';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
+const principales = techData.principales;
+const testing = techData.testing;
+const otras = techData.otras;
+
 export const PortfolioApp = ({ title }) => {
 
   const [technologies, settechnologies] = useState(techData)
-
   return (
     <>
       <div id='presentacion'>
@@ -23,16 +26,29 @@ export const PortfolioApp = ({ title }) => {
         <div id='section-2-1'>
           <img src="/public/terminal.png" alt="Imagen de terminal de comandos" />
           <h2>Tecnologias Aprendidas</h2>
-          {/* <ul>
-            {technologies.map(tech => (
-              <li key={tech.name}>Nombre: {tech.name}, Categoria: {tech.category}</li>
-            ))}
-          </ul> */}
-        </div>
-        <div id='section-2-2'>
 
         </div>
+        <div id='section-2-2'>
+          <h3>Destacadas</h3>
+          <ul>
+            {principales.map(tech => (
+              <li key={tech.name}><img src={tech.logo} /><p>{tech.name}</p></li>
+            ))}
+          </ul>
+          <h3>Testing</h3>
+          <ul>
+          {testing.map(tech => (
+            <li key={tech.name}><img src={tech.logo} /><p>{tech.name}</p></li>
+          ))}
+        </ul>
+        <h3>Otras</h3>
+          <ul>
+          {otras.map(tech => (
+            <li key={tech.name}><img src={tech.logo} /><p>{tech.name}</p></li>
+          ))}
+        </ul>
       </div>
+    </div >
       <div id='section-3'>
         <h2>Mis Proyectos</h2>
       </div>

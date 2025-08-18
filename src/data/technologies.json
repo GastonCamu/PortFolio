@@ -1,29 +1,29 @@
 {
   "principales": [
-    { "name": "React", "category": "Frontend", "logo": "" },
-    { "name": "Javascript", "category": "Frontend", "logo": "" },
-    { "name": "Angular", "category": "Backend", "logo": "" }
+    { "name": "React", "category": "Frontend", "logo": "./public/react.svg" },
+    { "name": "JavaScript", "category": "Frontend", "logo": "./public/javascript.svg" },
+    { "name": "TypeScript", "category": "Frontend", "logo": "./public/typescript.svg" },
+    { "name": "Angular", "category": "Frontend", "logo": "./public/angular.svg" }
+  ],
+  "testing": [
+    { "name": "Jest", "category": "Testing", "logo": "./public/jest.svg" },
+    { "name": "Testing Library", "category": "Testing", "logo": "./public/testing-library.svg" }
   ],
   "otras": [
+    { "name": "Lit", "category": "Frontend", "logo": "./public/lit.svg" },
+    { "name": "Java", "category": "Backend", "logo": "./public/java.svg" },
+    { "name": "Spring", "category": "Backend", "logo": "./public/spring.svg" },
+    { "name": ".NET", "category": "Backend", "logo": "./public/.net.svg" }
+  ],
+  "desactivadas": [
     { "name": "CSS", "category": "Frontend", "logo": "" },
     { "name": "HTML", "category": "Frontend", "logo": "" },
-    { "name": "React", "category": "Frontend", "logo": "" },
-    { "name": "JavaScript", "category": "Frontend", "logo": "" },
     { "name": "CSS", "category": "Frontend", "logo": "" },
     { "name": "SASS", "category": "Frontend", "logo": "" },
     { "name": "HTML", "category": "Frontend", "logo": "" },
-    { "name": "Angular", "category": "Frontend", "logo": "" },
     { "name": "Ionic", "category": "Frontend", "logo": "" },
-    { "name": "TypeScript", "category": "Frontend", "logo": "" },
-    { "name": "Lit", "category": "Frontend", "logo": "" },
 
-    { "name": "Java", "category": "Backend", "logo": "" },
-    { "name": "Spring", "category": "Backend", "logo": "" },
-    { "name": "C#", "category": "Backend", "logo": "" },
     { "name": "Python", "category": "Backend", "logo": "" },
-
-    { "name": "Jest", "category": "Testing", "logo": "" },
-    { "name": "Testing Library", "category": "Testing", "logo": "" },
 
     { "name": "Database", "category": "Database", "logo": "" }
   ]
