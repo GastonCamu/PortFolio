@@ -1,9 +1,47 @@
-import PropTypes from 'prop-types';
+import techData from './data/technologies.json';
 
-export function PortfolioApp({ title }) {
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+
+export const PortfolioApp = ({ title }) => {
+
+  const [technologies, settechnologies] = useState(techData)
+
   return (
     <>
-      <h1>{title}</h1>
+      <div id='presentacion'>
+        <h1>{title}</h1>
+        <p>Soy desarrollador front-end.</p>
+        <img src="/public/avatar.png" alt="Imagen de un avatar" />
+      </div>
+      <div id='section-1'>
+        <p>
+          Soy un desarrollador Front-End apasionado por el diseño y la funcionalidad en la web. Me gusta aprender, mejorar cada día y trabajar en proyectos que representen un desafío creativo y técnico.
+        </p>
+      </div>
+      <div id='section-2'>
+        <div id='section-2-1'>
+          <img src="/public/terminal.png" alt="Imagen de terminal de comandos" />
+          <h2>Tecnologias Aprendidas</h2>
+          {/* <ul>
+            {technologies.map(tech => (
+              <li key={tech.name}>Nombre: {tech.name}, Categoria: {tech.category}</li>
+            ))}
+          </ul> */}
+        </div>
+        <div id='section-2-2'>
+
+        </div>
+      </div>
+      <div id='section-3'>
+        <h2>Mis Proyectos</h2>
+      </div>
+      <div id='section-4'>
+        <h2>Mis Trabajos Recientes</h2>
+      </div>
+      <footer>
+        <p>Soy un footer</p>
+      </footer>
     </>
   );
 };

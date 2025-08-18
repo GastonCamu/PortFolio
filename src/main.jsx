@@ -4,7 +4,7 @@ import ReactDOM, { createRoot } from 'react-dom/client';
 import { PortfolioApp } from './PortfolioApp';
 import './styles.css';
 
-const title = 'Hola, me llamo Gastón Camú y soy desarrollador Front End';
+const title = 'Holaaa, me llamo Gastón Camú';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

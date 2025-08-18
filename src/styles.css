@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+  font-size: 100%;
+  line-height: 1;
+  text-align: left;
+
+  list-style: none;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+#presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 2rem;
+}
+
+#presentacion h1 {
+  font-size: 2.5rem;
+  color: #1b263b;
+}
+
+#presentacion p {
+  font-size: 1.7rem;
+}
+
+#presentacion img {
+  width: 10rem;
+  height: 10rem;
+}
+
+#section-1 {
+  display: flex;
+  background-color: #7510F7;
+  margin-top: 15rem;
+  height: 30rem;
+  align-items: center;
+}
+#section-1 p{
+  color: #f8f9fa;
+  margin: 0 auto 5rem auto;
+  width: 80%;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+#section-2 {
+  box-shadow: 0 3px 3px #ced4daa2;
+  margin: auto;
+  width: 95%;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  height: 40rem;
+  position: relative;
+  z-index: 1;
+  top: -10rem;
+}
+
+#section-2-1 {
+  margin: 1.5rem 0 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#section-2-1 img {
+  width: 4rem;
+  height: 4rem;
+}
+#section-2-1 h2 {
+  font-size: 1.7rem;
+  margin-left: 0.7rem;
+}
+
+#section-2-2 {
+  display: flex;
+  margin: 1.5rem auto 0.5rem auto;
+  width: 97%;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  height: 100%;
+}
+
+#section-3 {
+  display: flex;
+  margin-top: 3rem;
+  height: 20rem;
+  align-items: start;
+}
+
+#section-3 h2{
+  margin: 1rem auto 0 auto;
+  font-size: 1.8rem;
+
+}
+
+#section-4 {
+  display: flex;
+  margin-top: 3rem;
+  height: 30rem;
+  align-items: start;
+  background-color: #7510F7;
+}
+
+footer {
+  display: flex;
+  margin-top: 3rem;
+  height: 30rem;
+  align-items: start;
+  background-color: #7510F7;
+}
